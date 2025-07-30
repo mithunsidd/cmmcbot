@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: cmmc-chatbot
+    env: python
+    buildCommand: chmod +x build.sh && ./build.sh
+    startCommand: python app.py
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.4
+    healthCheckPath: /health

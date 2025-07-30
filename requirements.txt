@@ -10,3 +10,5 @@ transformers==4.34.0
 numpy>=1.26.0
 scipy>=1.11.3
 supabase==2.3.4
+# Pre-built tokenizers wheel to avoid Rust compilation
+tokenizers==0.14.1
